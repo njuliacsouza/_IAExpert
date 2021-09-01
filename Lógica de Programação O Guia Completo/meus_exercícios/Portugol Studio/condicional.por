@@ -1,6 +1,6 @@
 programa {
 	funcao inicio() {
-		real M1, M2, M3, final
+		real M1, M2, M3, final, exame
 		
 		escreva("Qual a primeira nota? ")
 		leia(M1)
@@ -21,6 +21,14 @@ programa {
             se (final > 4)
             {
                 escreva("\nVocê deve fazer exame!")
+                se (exame >= 6)
+                {
+                    escreva("\nParabéns! Você passou!")
+                }
+                senao
+                {
+                    escreva("\nQue pena, você foi reprovado...")
+                }
             }
             senao
             {

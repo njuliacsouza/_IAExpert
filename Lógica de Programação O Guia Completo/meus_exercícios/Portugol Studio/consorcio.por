@@ -1,6 +1,7 @@
 programa {
 	funcao inicio() {
-		real n_prestacoes, prestacoes_pagas, valor_prestacao, total_pago, saldo_devedor
+	    inteiro  n_prestacoes, prestacoes_pagas
+		real valor_prestacao, total_pago, saldo_devedor
 		
 		escreva("Vamos ver como está sua dívida no consórcio! \n")
 		

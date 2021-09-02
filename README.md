@@ -2,4 +2,5 @@
 
 <ol> 
   <li>Lógica de programação: Guia completo</li>
+  <li> Programação em Python: O guia para iniciantes </li>
 </ol>

@@ -9,6 +9,7 @@
       <li> Árvore de Decisão </li>
       <li> Random Forest </li>
       <li> Aprendizado por Regras </li>
+      <li> Aprendizado baseado em Instâncias </li>
       <li> Regressão Logística </li>
     </ul>
   </li>

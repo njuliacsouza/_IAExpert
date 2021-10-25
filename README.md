@@ -11,6 +11,7 @@
       <li> Aprendizado por Regras </li>
       <li> Aprendizado baseado em Instâncias </li>
       <li> Regressão Logística </li>
+      <li> Máquina de Vetor de Suporte - SVM </li>
     </ul>
   </li>
 </ol>

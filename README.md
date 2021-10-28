@@ -12,6 +12,7 @@
       <li> Aprendizado baseado em Instâncias </li>
       <li> Regressão Logística </li>
       <li> Máquina de Vetor de Suporte - SVM </li>
+      <li> Redes Neurais Artificiais </li>
     </ul>
   </li>
 </ol>

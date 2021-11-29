@@ -13,6 +13,7 @@
       <li> Regressão Logística </li>
       <li> Máquina de Vetor de Suporte - SVM </li>
       <li> Redes Neurais Artificiais </li>
+      <li> Avaliação de algoritmos de classificação </li>
     </ul>
   </li>
 </ol>

@@ -17,7 +17,11 @@
         <li> Redes Neurais Artificiais </li>
         <li> Avaliação de algoritmos de classificação </li>
       </ul>
-      <li> 2 - Regressão Linear
+      <li> 2 - Regressão </li>
+      <ul>
+        <li> Linear Simples </li>
+        <li> Multipla </li>
+        <li> Árvore de Decisão </li>
     </ul>
   </li>
 </ol>

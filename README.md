@@ -22,6 +22,10 @@
         <li> Linear Simples </li>
         <li> Multipla </li>
         <li> Árvore de Decisão </li>
-    </ul>
+      </ul>
+      <li> 3 - Regras de Associação </li>
+      <ul>
+        <li> Algoritmo apriori
+      </ul>
   </li>
 </ol>

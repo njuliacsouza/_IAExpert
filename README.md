@@ -25,7 +25,14 @@
       </ul>
       <li> 3 - Regras de Associação </li>
       <ul>
-        <li> Algoritmo apriori
+        <li> Algoritmo apriori </li>
+        <li> Algoritmo ECLAT</li>
+      </ul>
+      <li> 4 - Agrupamento (clustering)</li>
+      <ul> 
+        <li> Agrupamento K-Means</li>
+        <li> Agrupamento hierárquico </li>
+        <li> DBSCAN</li>
       </ul>
   </li>
 </ol>

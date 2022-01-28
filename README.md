@@ -32,7 +32,7 @@
       <ul> 
         <li> Agrupamento K-Means</li>
         <li> Agrupamento hierárquico </li>
-        <li> DBSCAN</li>
+        <li> DBSCAN </li>
       </ul>
   </li>
 </ol>

@@ -37,6 +37,7 @@
       <li> 5 - Tópicos complementares</li>
       <ul> 
         <li> Dados desbalanceados </li>
+        <li> Seleção de atributos </li>
         <li> Redução de dimensionalidade </li>
       </ul>
   </li>

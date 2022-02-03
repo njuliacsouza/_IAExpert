@@ -34,5 +34,10 @@
         <li> Agrupamento hierárquico </li>
         <li> DBSCAN </li>
       </ul>
+      <li> 5 - Tópicos complementares</li>
+      <ul> 
+        <li> Dados desbalanceados </li>
+        <li> Redução de dimensionalidade </li>
+      </ul>
   </li>
 </ol>

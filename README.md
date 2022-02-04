@@ -39,6 +39,7 @@
         <li> Dados desbalanceados </li>
         <li> Seleção de atributos </li>
         <li> Redução de dimensionalidade </li>
+        <li> Detecção de outliers </li>
       </ul>
   </li>
 </ol>

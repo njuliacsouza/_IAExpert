@@ -40,7 +40,7 @@
         <li> Seleção de atributos </li>
         <li> Redução de dimensionalidade </li>
         <li> Detecção de outliers </li>
-        <li> Aprendizagem por reforço (Q-Learning)
+        <li> Aprendizagem por reforço (Q-Learning) </li>
       </ul>
   </li>
 </ol>

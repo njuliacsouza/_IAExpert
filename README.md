@@ -3,9 +3,9 @@
 <ol> 
   <li> Lógica de programação: Guia completo</li>
   <li> Programação em Python: O guia para iniciantes </li>
-  <li> Machine Learning e Data Science de A à Z 
+  <li> Machine Learning e Data Science de A à Z </li>
     <ul>
-      <li> 1 - Classificação
+      <li> 1 - Classificação </li>
       <ul>
         <li> Naive Bayes </li>
         <li> Árvore de Decisão </li>
@@ -42,6 +42,6 @@
         <li> Detecção de outliers </li>
         <li> Aprendizagem por reforço (Q-Learning) </li>
       </ul>
-  </li>
+  </ul>
   <li> Estatística para Ciência de Dados e Machine Learning </li>
 </ol>

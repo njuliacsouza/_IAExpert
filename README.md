@@ -1,7 +1,7 @@
 <h1 align='center'> IAExpert Academy - cursos </h1>
 
 <ol> 
-  <li>Lógica de programação: Guia completo</li>
+  <li> Lógica de programação: Guia completo</li>
   <li> Programação em Python: O guia para iniciantes </li>
   <li> Machine Learning e Data Science de A à Z 
     <ul>
@@ -43,4 +43,5 @@
         <li> Aprendizagem por reforço (Q-Learning) </li>
       </ul>
   </li>
+  <li> Estatística para Ciência de Dados e Machine Learning </li>
 </ol>

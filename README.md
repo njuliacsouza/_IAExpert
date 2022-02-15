@@ -44,4 +44,15 @@
       </ul>
   </ul>
   <li> Estatística para Ciência de Dados e Machine Learning </li>
+  <ul> 
+    <li> 1 - População e amostra </li>
+    <li> 2 - Dados absolutos e relativos </li>
+    <li> 3 - Distribuição de frequência </li>
+    <li> 4 - Medidas de posição e dispersão </li>
+    <li> 5 - Distribuições estatísticas </li>
+    <li> 6 - Probabilidade </li>
+    <li> 7 - Intervalor de confiança e teste de hipóteses </li>
+    <li> 8 - Correlação e regressão </li>
+    <li> 10 - Visualização </li>
+  </ul>
 </ol>

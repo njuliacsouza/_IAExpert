@@ -41,6 +41,7 @@
         <li> Redução de dimensionalidade </li>
         <li> Detecção de outliers </li>
         <li> Aprendizagem por reforço (Q-Learning) </li>
+        <li> Classificação de texto com spaCy </li>
       </ul>
   </ul>
   <li> Estatística para Ciência de Dados e Machine Learning </li>

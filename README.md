@@ -42,6 +42,8 @@
         <li> Detecção de outliers </li>
         <li> Aprendizagem por reforço (Q-Learning) </li>
         <li> Classificação de texto com spaCy </li>
+        <li> Visao computacional </li>
+        <li> Séries Temporais </li>
       </ul>
   </ul>
   <li> Estatística para Ciência de Dados e Machine Learning </li>

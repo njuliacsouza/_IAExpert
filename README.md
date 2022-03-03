@@ -54,8 +54,10 @@
     <li> 4 - Medidas de posição e dispersão </li>
     <li> 5 - Distribuições estatísticas </li>
     <li> 6 - Probabilidade </li>
-    <li> 7 - Intervalor de confiança e teste de hipóteses </li>
-    <li> 8 - Correlação e regressão </li>
-    <li> 10 - Visualização </li>
   </ul>
 </ol>
+
+<!-- <li> 7 - Intervalor de confiança e teste de hipóteses </li>
+    <li> 8 - Correlação e regressão </li>
+    <li> 10 - Visualização </li>   -->
+    

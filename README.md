@@ -57,7 +57,7 @@
   </ul>
 </ol>
 
-<!-- <li> 7 - Intervalor de confiança e teste de hipóteses </li>
+<!-- <li> 7 - Intervalos de confiança e teste de hipóteses </li>
     <li> 8 - Correlação e regressão </li>
     <li> 10 - Visualização </li>   -->
     

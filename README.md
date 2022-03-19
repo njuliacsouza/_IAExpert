@@ -54,7 +54,7 @@
     <li> 4 - Medidas de posição e dispersão </li>
     <li> 5 - Distribuições estatísticas </li>
     <li> 6 - Probabilidade </li>
-    <li> 7 - Intervalos de confiança e teste de hipóteses </li>
+    <li> 7 - Intervalos de confiança e Teste de hipóteses </li>
   </ul>
 </ol>
 

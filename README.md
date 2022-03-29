@@ -55,10 +55,15 @@
     <li> 5 - Distribuições estatísticas </li>
     <li> 6 - Probabilidade </li>
     <li> 7 - Intervalos de confiança e Teste de hipóteses </li>
+    <li> 8 - Correlação e regressão </li>
+    <li> 10 - Visualização </li>
+  </ul>
+  <li> Python para Finanças: Análise de Dados e Machine Learning</li>
+  <ul> 
+    <li> 1 - Finanças
   </ul>
 </ol>
 
 <!-- 
-    <li> 8 - Correlação e regressão </li>
-    <li> 10 - Visualização </li>   -->
+       -->
     

@@ -60,10 +60,24 @@
   </ul>
   <li> Python para Finanças: Análise de Dados e Machine Learning</li>
   <ul> 
-    <li> 1 - Finanças
+    <li> 1 - Finanças </li>
+    <ul> 
+      <li> Visualização de dados financeiros </li>
+    </ul>
   </ul>
 </ol>
 
 <!-- 
-       -->
+<li> Visualização de dados financeiros </li>
+ <li> Taxa de retorno de ações </li>
+ <li> Cálculo do risco de ações </li>
+ <li> Alocação e otimização de portólios </li>
+ <li> Precificação de ativos com CAPM </li>
+ <li> Simulações Monte Carlo para previsão de preços </li>
+ <li> Previsão de preços com séries temporais </li>
+Parte 2
+ <li> Classificação de empresas para investimento a longo prazo </li>
+ <li> Agrupamento de empresas similares </li>
+ <li> Análise de sentimentos em textos financeiros </li>
+  -->
     

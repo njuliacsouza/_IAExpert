@@ -63,12 +63,13 @@
     <li> 1 - Finanças </li>
     <ul> 
       <li> Visualização de dados financeiros </li>
+      <li> Taxa de retorno de ações </li>
     </ul>
   </ul>
 </ol>
 
 <!-- 
-<li> Visualização de dados financeiros </li>
+
  <li> Taxa de retorno de ações </li>
  <li> Cálculo do risco de ações </li>
  <li> Alocação e otimização de portólios </li>

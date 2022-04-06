@@ -56,7 +56,7 @@
     <li> 6 - Probabilidade </li>
     <li> 7 - Intervalos de confiança e Teste de hipóteses </li>
     <li> 8 - Correlação e regressão </li>
-    <li> 10 - Visualização </li>
+    <li> 9 - Visualização </li>
   </ul>
   <li> Python para Finanças: Análise de Dados e Machine Learning</li>
   <ul> 

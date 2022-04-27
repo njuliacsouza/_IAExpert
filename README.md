@@ -67,6 +67,7 @@
       <li> Cálculo do risco de ações </li>
       <li> Alocação e otimização de portólios </li>
       <li> Precificação de ativos com CAPM </li>
+      <li> Simulações Monte Carlo para previsão de preços </li>
     </ul>
   </ul>
 </ol>
@@ -76,7 +77,7 @@
  
  
  
- <li> Simulações Monte Carlo para previsão de preços </li>
+ 
  <li> Previsão de preços com séries temporais </li>
 Parte 2
  <li> Classificação de empresas para investimento a longo prazo </li>

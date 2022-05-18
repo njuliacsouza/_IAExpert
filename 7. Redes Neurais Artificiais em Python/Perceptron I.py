@@ -14,14 +14,14 @@ def soma(entradas: list, pesos: list) -> float:
     
     return s
 
-s = soma(entradas, pesos)
-print(f'Soma: {s}')
-
 def step_function(soma):
     if (soma >= 1):
         return 1
     return 0
 
+
+s = soma(entradas, pesos)
 r = step_function(s)
 
+print(f'Soma: {s}')
 print(f'Resposta: {r}')

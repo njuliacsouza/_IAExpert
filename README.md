@@ -68,6 +68,13 @@
       <li> Alocação e otimização de portólios </li>
       <li> Precificação de ativos com CAPM </li>
       <li> Simulações Monte Carlo para previsão de preços </li>
+      <li> Previsão de preços com séries temporais </li>
+    </ul>
+    <li> 2 - Machine Learning </li>
+    <ul>
+      <li> Classificação de empresas para investimento a longo prazo </li>
+      <li> Agrupamento de empresas similares </li>
+      <li> Análise de sentimentos em textos financeiros </li>
     </ul>
   </ul>
 </ol>
@@ -78,10 +85,6 @@
  
  
  
- <li> Previsão de preços com séries temporais </li>
-Parte 2
- <li> Classificação de empresas para investimento a longo prazo </li>
- <li> Agrupamento de empresas similares </li>
- <li> Análise de sentimentos em textos financeiros </li>
+
   -->
     

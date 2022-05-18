@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 IAExpert Academy - Redes Neurais Artificiais em Python
+
+May, 2022
+
+Maria Júlia Cristofoletti de Souza
 """
 
 entradas = [1, 7, 5]
@@ -14,7 +18,7 @@ def soma(entradas: list, pesos: list) -> float:
     
     return s
 
-def step_function(soma):
+def step_function(soma: float) -> int:
     if (soma >= 1):
         return 1
     return 0

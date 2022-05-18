@@ -77,13 +77,12 @@
       <li> Análise de sentimentos em textos financeiros </li>
     </ul>
   </ul>
+  <li> Redes Neurais Artificiais em Python </li>
+    <li> Perceptron de uma camada</li>
+    <li> Redes Neurais Multicamada</li>
 </ol>
 
-<!-- 
-
- 
- 
- 
+<!--  
  
 
   -->

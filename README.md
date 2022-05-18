@@ -78,8 +78,10 @@
     </ul>
   </ul>
   <li> Redes Neurais Artificiais em Python </li>
-    <li> Perceptron de uma camada</li>
-    <li> Redes Neurais Multicamada</li>
+  <ul>
+      <li> 1 - Perceptron de uma camada</li>
+      <li> 2 - Redes Neurais Multicamada</li>
+  </ul>
 </ol>
 
 <!--  

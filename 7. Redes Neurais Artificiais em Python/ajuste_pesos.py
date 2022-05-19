@@ -9,6 +9,7 @@ Maria Júlia Cristofoletti de Souza
 
 import pandas as pd
 import numpy as np
+from NeuralNetwork import ajuste_pesos
 
 lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
@@ -26,32 +27,12 @@ OP_E = pd.DataFrame({
 
 print(OP_E)
 
-# ajuste dos pesos
-peso_inicial = [0, 0]
-pesos_e = np.array(peso_inicial)
-pesos_ou = np.array(peso_inicial)
-erros_e = [10 for _ in range(len(lista_x))]
-erros_ou = [10 for _ in range(len(lista_x))]
-erros = erros_e + erros_ou
-i = 0
+# ajuste dos pesos  
+erro_max = 0.001 
+pesos_e, i_e = ajuste_pesos(lista_x, lista_y, esperados_e, erro_max)
+pesos_ou, i_ou = ajuste_pesos(lista_x, lista_y, esperados_ou, erro_max)
     
-while max(erros)>0.0001:  # erro máximo
-    i += 1
-    for i in range(len(lista_x)):
-        resultado_e = (lista_x[i] * pesos_e[0]) + (lista_y[i] * pesos_e[1]) 
-        resultado_ou = (lista_x[i] * pesos_ou[0]) + (lista_y[i] * pesos_ou[1]) 
-        
-        erro_e = esperados_e[i] - resultado_e
-        erro_ou = esperados_ou[i] - resultado_ou
-        erros_e[i] = erro_e
-        erros_ou[i] = erro_ou
-        
-        if (erro_e > 0.001):
-            pesos_e = pesos_e + (0.1 * lista_x[i]*erro_e)
-        elif (erro_ou > 0.001):
-            pesos_ou = pesos_ou + (0.1 * lista_x[i]*erro_ou)
-    erros = erros_e + erros_ou
-        
 print('Pesos operador E:',pesos_e)
+print('Iterações E:',i_e)
 print('Pesos operador OU:',pesos_ou)
-print('Iterações:',i)
+print('Iterações OU:',i_ou)

@@ -28,16 +28,25 @@ print(OP_E)
 
 # ajuste dos pesos
 peso_inicial = [0, 0]
-pesos = np.array(peso_inicial)
+pesos_e = np.array(peso_inicial)
+pesos_ou = np.array(peso_inicial)
 erros_e = []
+erros_ou = []
 
 for i in range(len(lista_x)):
-    resultado_e = (lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) 
-    erro = esperados_e[i] - resultado_e
-    erros_e.append(erro)
+    resultado_e = (lista_x[i] * pesos_e[0]) + (lista_y[i] * pesos_e[1]) 
+    resultado_ou = (lista_x[i] * pesos_ou[0]) + (lista_y[i] * pesos_ou[1]) 
     
-    if erro > 0.001:
-        pesos = pesos + (0.1 * lista_x[i]*erro)
+    erro_e = esperados_e[i] - resultado_e
+    erro_ou = esperados_ou[i] - resultado_ou
+    erros_e.append(erro_e)
+    erros_ou.append(erro_ou)
+    
+    if (erro_e > 0.001):
+        pesos_e = pesos_e + (0.1 * lista_x[i]*erro_e)
+    elif (erro_ou > 0.001):
+        pesos_ou = pesos_ou + (0.1 * lista_x[i]*erro_e)
         
 
-print(pesos)
+print('Pesos operador E:',pesos_e)
+print('Pesos operador OU:',pesos_ou)

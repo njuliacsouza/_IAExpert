@@ -7,6 +7,7 @@ May, 2022
 Maria Júlia Cristofoletti de Souza
 """
 
+import numpy as np
 
 def soma(entradas: list, pesos: list) -> float:
     s = 0 # soma
@@ -20,3 +21,9 @@ def step_function(soma: float) -> int:
     if (soma >= 1):
        return 1
     return 0
+
+def soma_II(entradas: list, pesos: list) -> float:
+    entradas = np.array(entradas)
+    pesos = np.array(pesos)
+    
+    return entradas.dot(pesos)

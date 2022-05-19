@@ -27,3 +27,9 @@ def soma_II(entradas: list, pesos: list) -> float:
     pesos = np.array(pesos)
     
     return entradas.dot(pesos)
+
+def operador_E(x, y):
+    if x + y == 2:
+        return True
+    return False
+    

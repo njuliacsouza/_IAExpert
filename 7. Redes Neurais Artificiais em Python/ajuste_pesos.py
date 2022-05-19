@@ -35,7 +35,7 @@ erros_ou = [10 for _ in range(len(lista_x))]
 erros = erros_e + erros_ou
 i = 0
     
-while max(erros)>0.01:
+while max(erros)>0.0001:  # erro máximo
     i += 1
     for i in range(len(lista_x)):
         resultado_e = (lista_x[i] * pesos_e[0]) + (lista_y[i] * pesos_e[1]) 

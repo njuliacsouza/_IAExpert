@@ -38,15 +38,13 @@ def ajuste_pesos(lista_x, lista_y, esperados, erro_max):
     
     while max(erros)>erro_max:  # erro máximo
         it += 1
-        print(it)
         for i in range(len(lista_x)):
-            resultado = (lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) 
-            erro = esperados[i] - resultado
+            resultado = step_function((lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) )
+            erro = abs(esperados[i] - resultado)
             erros[i] = erro
             
-            if (erro>0):
-                pesos[0] = pesos[0] + (taxa_aprendizado * lista_x[i]*erro)
-                pesos[1] = pesos[0] + (taxa_aprendizado * lista_y[i]*erro)
+            pesos[0] = pesos[0] + (taxa_aprendizado * lista_x[i]*erro)
+            pesos[1] = pesos[1] + (taxa_aprendizado * lista_y[i]*erro)
     return pesos, it
 
 # aula

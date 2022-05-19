@@ -7,7 +7,6 @@ May, 2022
 Maria Júlia Cristofoletti de Souza
 """
 
-from NeuralNetwork import operador_E
 import pandas as pd
 
 lista_x = [0, 0, 1, 1]

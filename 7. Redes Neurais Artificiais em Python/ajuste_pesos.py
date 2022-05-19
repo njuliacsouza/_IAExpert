@@ -13,8 +13,8 @@ lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
 
 # operador E, OU, esperado
-esperados_e = [(lista_x[i] and lista_y[i]) for i in range(len(lista_x))]
-esperados_ou = [(lista_x[i] or lista_y[i]) for i in range(len(lista_x))]
+esperados_e = [(lista_x[i] & lista_y[i]) for i in range(len(lista_x))]
+esperados_ou = [(lista_x[i] | lista_y[i]) for i in range(len(lista_x))]
 
 # tabela verdade
 OP_E = pd.DataFrame({
@@ -26,7 +26,6 @@ OP_E = pd.DataFrame({
 print(OP_E)
 
 # ajuste dos pesos
-resultados_e = []
-resultados_ou = []
+
 
 #print(pesos)

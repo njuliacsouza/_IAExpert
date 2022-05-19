@@ -33,13 +33,13 @@ def soma_II(entradas: list, pesos: list) -> float:
 # ajuste dos pesos
 def ajuste_pesos(lista_x, lista_y, esperados, erro_max): 
     pesos = [0, 0]
-    erros = [10 for _ in range(len(lista_x))]
+    erros = [1 for _ in range(len(lista_x))]
     it = 0
     
     while max(erros)>erro_max:  # erro máximo
         it += 1
         for i in range(len(lista_x)):
-            resultado = step_function((lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) )
+            resultado = step_function(soma([lista_x[i], lista_y[i]], pesos))
             erro = abs(esperados[i] - resultado)
             erros[i] = erro
             

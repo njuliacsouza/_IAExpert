@@ -32,25 +32,25 @@ def soma_II(entradas: list, pesos: list) -> float:
 
 # ajuste dos pesos
 def ajuste_pesos(lista_x, lista_y, esperados, erro_max): 
-    pesos = np.array([0, 0])
+    pesos = [0, 0]
     erros = [10 for _ in range(len(lista_x))]
     it = 0
     
     while max(erros)>erro_max:  # erro máximo
         it += 1
+        print(it)
         for i in range(len(lista_x)):
             resultado = (lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) 
             erro = esperados[i] - resultado
             erros[i] = erro
             
-            if (erro>erro_max):
-                pesos = pesos + (taxa_aprendizado * lista_x[i]*erro)
+            if (erro>0):
+                pesos[0] = pesos[0] + (taxa_aprendizado * lista_x[i]*erro)
+                pesos[1] = pesos[0] + (taxa_aprendizado * lista_y[i]*erro)
     return pesos, it
 
 # aula
 def calcula_saida(registro, pesos):
     s = registro.dot(pesos)
     return step_function(s)
-
-def treinar()
     

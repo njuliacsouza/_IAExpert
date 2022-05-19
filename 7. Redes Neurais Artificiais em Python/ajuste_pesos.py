@@ -31,7 +31,7 @@ erro_max = 0.001
 pesos_e, i_e = ajuste_pesos(lista_x, lista_y, esperados_e, erro_max)
 pesos_ou, i_ou = ajuste_pesos(lista_x, lista_y, esperados_ou, erro_max)
     
-print('Pesos operador E:',pesos_e)
+print('Pesos operador E:',[round(i, 2) for i in pesos_e])
 print('Iterações E:',i_e)
-print('Pesos operador OU:',pesos_ou)
+print('Pesos operador OU:',[round(i, 2) for i in pesos_ou])
 print('Iterações OU:',i_ou)

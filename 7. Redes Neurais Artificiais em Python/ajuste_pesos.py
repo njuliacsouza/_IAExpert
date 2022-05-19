@@ -14,7 +14,7 @@ lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
 resultados = []
 
-for i in range(lista_x):
+for i in range(len(lista_x)):
     resultado = operador_E(lista_x[i], lista_y[i])
     resultados.append(resultado)
     

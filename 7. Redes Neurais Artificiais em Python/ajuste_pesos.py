@@ -8,7 +8,6 @@ Maria Júlia Cristofoletti de Souza
 """
 
 import pandas as pd
-import numpy as np
 from NeuralNetwork import ajuste_pesos
 
 lista_x = [0, 0, 1, 1]

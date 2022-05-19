@@ -32,10 +32,10 @@ def soma_II(entradas: list, pesos: list) -> float:
 def ajuste_pesos(lista_x, lista_y, esperados, erro_max): 
     pesos = np.array([0, 0])
     erros = [10 for _ in range(len(lista_x))]
-    i = 0
+    it = 0
     
     while max(erros)>0.001:  # erro máximo
-        i += 1
+        it += 1
         for i in range(len(lista_x)):
             resultado = (lista_x[i] * pesos[0]) + (lista_y[i] * pesos[1]) 
             erro = esperados[i] - resultado
@@ -43,4 +43,4 @@ def ajuste_pesos(lista_x, lista_y, esperados, erro_max):
             
             if (erro > 0.001):
                 pesos = pesos + (0.1 * lista_x[i]*erro)
-    return pesos, i
+    return pesos, it

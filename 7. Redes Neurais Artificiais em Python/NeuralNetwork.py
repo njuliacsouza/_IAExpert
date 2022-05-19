@@ -9,6 +9,8 @@ Maria Júlia Cristofoletti de Souza
 
 import numpy as np
 
+taxa_aprendizado = 0.1
+
 def soma(entradas: list, pesos: list) -> float:
     s = 0 # soma
     
@@ -42,5 +44,13 @@ def ajuste_pesos(lista_x, lista_y, esperados, erro_max):
             erros[i] = erro
             
             if (erro>erro_max):
-                pesos = pesos + (0.1 * lista_x[i]*erro)
+                pesos = pesos + (taxa_aprendizado * lista_x[i]*erro)
     return pesos, it
+
+# aula
+def calcula_saida(registro, pesos):
+    s = registro.dot(pesos)
+    return step_function(s)
+
+def treinar()
+    

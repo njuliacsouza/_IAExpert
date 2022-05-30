@@ -27,9 +27,8 @@ OP_E = pd.DataFrame({
 print(OP_E)
 
 # ajuste dos pesos  
-erro_max = 0.0001 
-pesos_e, i_e = ajuste_pesos(lista_x, lista_y, esperados_e, erro_max)
-pesos_ou, i_ou = ajuste_pesos(lista_x, lista_y, esperados_ou, erro_max)
+pesos_e, i_e = ajuste_pesos(lista_x, lista_y, esperados_e)
+pesos_ou, i_ou = ajuste_pesos(lista_x, lista_y, esperados_ou)
     
 print('Pesos operador E:',[round(i, 4) for i in pesos_e])
 print('Iterações E:',i_e)

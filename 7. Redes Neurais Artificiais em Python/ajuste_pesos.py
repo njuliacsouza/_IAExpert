@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 IAExpert Academy - Redes Neurais Artificiais em Python
 

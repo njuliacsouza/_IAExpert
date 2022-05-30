@@ -11,6 +11,8 @@ from NeuralNetwork import ajuste_pesos
 
 lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
+entradas_xy = [[lista_x[i],lista_y[i]] for i in range(4)]
+print(entradas_xy)
 
 # operador E, OU, esperado
 esperados_e = [(lista_x[i] & lista_y[i]) for i in range(len(lista_x))]
@@ -26,8 +28,8 @@ OP_E = pd.DataFrame({
 print(OP_E)
 
 # ajuste dos pesos  
-pesos_e, i_e = ajuste_pesos(lista_x, lista_y, esperados_e)
-pesos_ou, i_ou = ajuste_pesos(lista_x, lista_y, esperados_ou)
+pesos_e, i_e = ajuste_pesos(entradas_xy, esperados_e)
+pesos_ou, i_ou = ajuste_pesos(entradas_xy, esperados_ou)
     
 print('Pesos operador E:',[round(i, 4) for i in pesos_e])
 print('Iterações E:',i_e)

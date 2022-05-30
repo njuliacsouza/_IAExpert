@@ -30,20 +30,19 @@ def soma_II(entradas: list, pesos: list) -> float:
     return entradas.dot(pesos)
 
 # ajuste dos pesos
-def ajuste_pesos(lista_x, lista_y, esperados): 
+def ajuste_pesos(entradas, esperados): 
     pesos = [0, 0]
     it = 0
     erro_total = 1
     
-    while erro_total != 0:  # erro máximo
+    while (erro_total != 0):  # erro máximo
         erro_total = 0
         it += 1
-        for i in range(len(lista_x)):
-            resultado = step_function(soma([lista_x[i], lista_y[i]], pesos))
+        for i in range(len(esperados)):
+            resultado = step_function(soma_II(np.asarray(entradas[i]), pesos))
             erro = abs(esperados[i] - resultado)
             erro_total += erro
-            
-            pesos[0] = pesos[0] + (taxa_aprendizado * lista_x[i]*erro)
-            pesos[1] = pesos[1] + (taxa_aprendizado * lista_y[i]*erro)
+            for j in range(len(pesos)):
+                pesos[j] = pesos[j] + (taxa_aprendizado * entradas[i][j]*erro)
     return pesos, it
     

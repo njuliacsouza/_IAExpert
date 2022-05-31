@@ -37,7 +37,7 @@ print('Iterações E:',i_e)
 print('Pesos operador OU:',[round(i, 4) for i in pesos_ou])
 print('Iterações OU:',i_ou)
 #print('Pesos operador SHORT:',[round(i, 4) for i in pesos_short])
-#print('Iterações OU:',i_short)
+#print('Iterações SHORT:',i_short)
 
 '''
 operador SHORT não é linearmente seprável (erro não chega a ZERO), para resolvê-lo,

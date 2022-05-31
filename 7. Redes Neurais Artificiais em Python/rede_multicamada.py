@@ -9,7 +9,6 @@ Maria Júlia Cristofoletti de Souza
 import pandas as pd
 from NeuralNetwork import sigmoid_function, camada_ocultaI
 
-
 lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
 entradas_xy = [[lista_x[i],lista_y[i]] for i in range(len(lista_x))]

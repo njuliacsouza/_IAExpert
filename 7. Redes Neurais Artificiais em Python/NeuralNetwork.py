@@ -48,4 +48,7 @@ def ajuste_pesosI(entradas, esperados):
 
 def sigmoid_function(soma: float) -> float:
     return round(1/(1+np.exp(-soma)), 5)
+
+def camada_ocultaI():
+    pass
     

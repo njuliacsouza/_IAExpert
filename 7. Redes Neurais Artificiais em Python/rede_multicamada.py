@@ -7,7 +7,7 @@ Maria Júlia Cristofoletti de Souza
 """
 
 import pandas as pd
-from NeuralNetwork import sigmoid_function
+from NeuralNetwork import sigmoid_function, camada_ocultaI
 
 
 lista_x = [0, 0, 1, 1]

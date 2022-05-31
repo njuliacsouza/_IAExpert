@@ -39,4 +39,7 @@ print('Iterações OU:',i_ou)
 #print('Pesos operador SHORT:',[round(i, 4) for i in pesos_short])
 #print('Iterações OU:',i_short)
 
-# operador SHORT não é linearmente seprável (erro não chega a ZERO)
+'''
+operador SHORT não é linearmente seprável (erro não chega a ZERO), para resolvê-lo,
+é preciso implementar uma rede MULTICAMADA
+'''

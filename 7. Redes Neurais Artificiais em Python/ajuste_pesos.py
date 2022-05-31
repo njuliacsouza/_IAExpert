@@ -7,7 +7,7 @@ Maria Júlia Cristofoletti de Souza
 """
 
 import pandas as pd
-from NeuralNetwork import ajuste_pesos
+from NeuralNetwork import ajuste_pesosI
 
 lista_x = [0, 0, 1, 1]
 lista_y = [0, 1, 0, 1]
@@ -28,9 +28,9 @@ OP_E = pd.DataFrame({
 print(OP_E)
 
 # ajuste dos pesos  
-pesos_e, i_e = ajuste_pesos(entradas_xy, esperados_e,)
-pesos_ou, i_ou = ajuste_pesos(entradas_xy, esperados_ou,)
-#pesos_xor, i_xor = ajuste_pesos(entradas_xy, esperados_short, 0.1)
+pesos_e, i_e = ajuste_pesosI(entradas_xy, esperados_e,)
+pesos_ou, i_ou = ajuste_pesosI(entradas_xy, esperados_ou,)
+#pesos_xor, i_xor = ajuste_pesosI(entradas_xy, esperados_short, 0.1)
     
 print('Pesos operador E:',[round(i, 4) for i in pesos_e])
 print('Iterações E:',i_e)

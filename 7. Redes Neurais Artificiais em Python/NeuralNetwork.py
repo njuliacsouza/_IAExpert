@@ -29,8 +29,8 @@ def soma_II(entradas: list, pesos: list) -> float:
     
     return entradas.dot(pesos)
 
-# ajuste dos pesos
-def ajuste_pesos(entradas, esperados): 
+# ajuste dos pesos - Perceptron de uma camada
+def ajuste_pesosI(entradas, esperados): 
     pesos = [0, 0]
     it = 0
     erro_total = 1
@@ -45,4 +45,7 @@ def ajuste_pesos(entradas, esperados):
             for j in range(len(pesos)):
                 pesos[j] = pesos[j] + (taxa_aprendizado * entradas[i][j]*erro)
     return pesos, it
+
+def sigmoid_function():
+    pass
     

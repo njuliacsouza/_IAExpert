@@ -46,6 +46,7 @@ def ajuste_pesosI(entradas, esperados):
                 pesos[j] = pesos[j] + (taxa_aprendizado * entradas[i][j]*erro)
     return pesos, it
 
-def sigmoid_function():
-    pass
+def sigmoid_function(soma: float) -> float:
+    return 1/(1+np.exp(-soma))
+    
     

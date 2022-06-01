@@ -27,6 +27,13 @@ OP = pd.DataFrame({
 
 print(OP)
 
+# camada de entrada para camada oculta
+pesos0 = [[-0.424, -0.740, -0.961], 
+          [0.358, -0.577, -0.469]]
+# camada oculta para camada de saída
+pesos1 = [-0.017, -0.893, 0.148]
+
+epocas = 100
 # ajuste dos pesos  
 #pesos_xor, i_xor = camada_ocultaI()
     

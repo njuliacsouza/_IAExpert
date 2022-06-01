@@ -6,6 +6,8 @@ May, 2022
 Maria Júlia Cristofoletti de Souza
 """
 
+# feedforward
+
 import pandas as pd
 from NeuralNetwork import sigmoid_function, camada_ocultaI
 

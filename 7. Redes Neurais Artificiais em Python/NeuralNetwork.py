@@ -47,8 +47,11 @@ def ajuste_pesosI(entradas, esperados):
     return pesos, it
 
 def sigmoid_function(soma: float) -> float:
-    return round(1/(1+np.exp(-soma)), 5)
+    return 1/(1+np.exp(-soma))
 
+# camada entrada: 0
+# camada oculta: 1
+# camada saida: 2
 def camada_ocultaI(epocas, entrada, peso0, peso1):
     entrada = np.array(entrada)
     peso0 = np.array(peso0)
@@ -56,7 +59,8 @@ def camada_ocultaI(epocas, entrada, peso0, peso1):
     
     for j in range(epocas):
         sinapse_0 = np.dot(entrada, peso0)
-    return sinapse_0
+        camada_1 = sigmoid_function(sinapse_0)
+    return camada_1
         
         
         

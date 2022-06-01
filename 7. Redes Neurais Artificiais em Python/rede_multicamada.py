@@ -9,6 +9,7 @@ Maria Júlia Cristofoletti de Souza
 # feedforward
 
 import pandas as pd
+import numpy as np
 from NeuralNetwork import sigmoid_function, camada_ocultaI
 
 lista_x = [0, 0, 1, 1]
@@ -34,8 +35,9 @@ pesos0 = [[-0.424, -0.740, -0.961],
 pesos1 = [-0.017, -0.893, 0.148]
 
 epocas = 100
+
 # ajuste dos pesos  
-#pesos_xor, i_xor = camada_ocultaI()
+a = camada_ocultaI(epocas, entradas_xy, pesos0, pesos1)
     
 #print('Pesos operador XOR:',[round(i, 4) for i in pesos_xor])
 #print('Iterações XOR:',i_xor)

@@ -26,7 +26,7 @@ OP = pd.DataFrame({
 print(OP)
 
 # ajuste dos pesos  
-pesos_xor, i_xor = camada_ocultaI()
+#pesos_xor, i_xor = camada_ocultaI()
     
-print('Pesos operador XOR:',[round(i, 4) for i in pesos_xor])
-print('Iterações XOR:',i_xor)
+#print('Pesos operador XOR:',[round(i, 4) for i in pesos_xor])
+#print('Iterações XOR:',i_xor)

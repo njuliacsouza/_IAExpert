@@ -82,6 +82,7 @@
       <li> 1 - Perceptron de uma camada</li>
       <li> 2 - Redes Neurais Multicamada</li>
   </ul>
+  <li> Processamento de Linguagem Natural com Deep Learning </li>
 </ol>
 
 <!--  

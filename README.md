@@ -83,6 +83,10 @@
       <li> 2 - Redes Neurais Multicamada</li>
   </ul>
   <li> Processamento de Linguagem Natural com Deep Learning </li>
+  <ul> 
+    <li> 1 - Redes Neurais convolucionais para PLN </li>
+    <li> 2 - Arquitetura Transformer </li>
+  </ul>
 </ol>
 
 <!--  

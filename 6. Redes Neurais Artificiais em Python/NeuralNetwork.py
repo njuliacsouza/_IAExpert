@@ -62,7 +62,8 @@ def camada_ocultaI(epocas, entrada, peso0, peso1):
         camada_1 = sigmoid_function(sinapse_0)
     return camada_1
 
-
+def erro(calculado, correta):
+    return [correta[i] - calculado[i] for i in range(len(correta))]
         
         
         

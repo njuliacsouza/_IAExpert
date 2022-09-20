@@ -1,7 +1,7 @@
 """
 IAExpert Academy - Redes Neurais Artificiais em Python
 
-May, 2022
+September, 2022
 
 Maria Júlia Cristofoletti de Souza
 """
@@ -61,6 +61,8 @@ def camada_ocultaI(epocas, entrada, peso0, peso1):
         sinapse_0 = np.dot(entrada, peso0)
         camada_1 = sigmoid_function(sinapse_0)
     return camada_1
+
+
         
         
         

@@ -1,7 +1,7 @@
 """
 IAExpert Academy - Redes Neurais Artificiais em Python
 
-May, 2022
+Sepyember, 2022
 
 Maria Júlia Cristofoletti de Souza
 """

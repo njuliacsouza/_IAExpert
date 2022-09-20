@@ -86,6 +86,7 @@
   <ul> 
     <li> 1 - Redes Neurais convolucionais para PLN </li>
     <li> 2 - Arquitetura Transformer </li>
+    <li> 3 - Rede Neural Artificial </li>
   </ul>
 </ol>
 

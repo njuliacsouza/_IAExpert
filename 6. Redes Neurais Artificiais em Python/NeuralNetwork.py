@@ -52,18 +52,37 @@ def sigmoid_function(soma: float) -> float:
 # camada entrada: 0
 # camada oculta: 1
 # camada saida: 2
-def camada_ocultaI(epocas, entrada, peso0, peso1):
+def camada_ocultaI(entrada, peso0, peso1):
     entrada = np.array(entrada)
     peso0 = np.array(peso0)
     peso1 = np.array([[i] for i in peso1])
     
-    for j in range(epocas):
-        sinapse_0 = np.dot(entrada, peso0)
-        camada_1 = sigmoid_function(sinapse_0)
-    return camada_1
+    sinapse_0 = np.dot(entrada, peso0)
+    camada_1 = sigmoid_function(sinapse_0)
+    
+    return camada_1, sinapse_0
 
 def erro(calculado, correta):
     return [correta[i] - calculado[i] for i in range(len(correta))]
+
+def derivada_sigmoide(x):  
+    return x * (1-x)
+
+def delta_saida(erros, derivadas):
+    return [erros[i]*derivadas[i] for i in range(len(erros))]
+
+def delta_oculta(derivadas, pesos, delta_saida):
+    resultado = []
+    for i in range(len(derivadas)):
+        res_i = []
+        for j in range(len(derivadas[0])):
+            res_i.append(pesos[j] * derivadas[i][j] * delta_saida[i])
+        resultado.append(res_i)
+    return resultado
+
+def ajuste_peso1(pesos, entradas, delta, taxa_aprendizado=0.01, momento=1):
+    |                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    
         
         
         

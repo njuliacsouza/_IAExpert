@@ -106,8 +106,17 @@ def ajuste_peso0(entradas, delta, pesos, taxa_aprendizado=0.3, momento=1): # cam
                 soma += entradas[j][i] * delta[j][neuronio]
             lista_i.append(soma)
         lista.append(lista_i)
+        
+    # novos pesos
+    novos_pesos = []
+    for i in range(len(pesos[0])):
+        lista_i = []
+        for j in range(len(pesos)):
+            novo_peso = (pesos[j][i]* momento) + (lista[i][j]*taxa_aprendizado)
+            lista_i.append(novo_peso)
+        novos_pesos.append(lista_i)
     
-    return lista
+    return novos_pesos
         
         
         

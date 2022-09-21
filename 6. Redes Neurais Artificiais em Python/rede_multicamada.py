@@ -47,7 +47,7 @@ for i in range(len(sinapse0)):
 delta1 = delta_saida(erros, derivadas1)
 delta0 = delta_oculta(derivadas0, pesos1, delta1)
 
-pesos1_final = ajuste_peso1(pesos1, entradas_xy, delta1)
+pesos1_final = ajuste_peso1(peso_oculta, delta1)
 pesos0_final = pesos0.copy()
 
 

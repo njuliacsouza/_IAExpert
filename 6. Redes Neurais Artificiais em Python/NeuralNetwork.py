@@ -80,9 +80,16 @@ def delta_oculta(derivadas, pesos, delta_saida):
         resultado.append(res_i)
     return resultado
 
-def ajuste_peso1(pesos, entradas, delta, taxa_aprendizado=0.01, momento=1):
-    |                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-    
+def ajuste_peso1(oculta, delta, taxa_aprendizado=0.01, momento=1):
+    # (entrada * delta)
+    lista = []
+    for i in range(len(oculta[0])):    
+        soma = 0
+        for j in range(len(oculta)):
+            soma += oculta[j][i] * delta[j]
+        lista.append(soma)
+    # peso (n-1) = (peso(n) * momento) + (entrada * delta * taxa de aprendizagem)
+    return lista
         
         
         

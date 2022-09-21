@@ -80,8 +80,8 @@ def delta_oculta(derivadas, pesos, delta_saida):
         resultado.append(res_i)
     return resultado
 
-def ajuste_peso1(oculta, delta, taxa_aprendizado=0.01, momento=1):
-    # (entrada * delta)
+def ajuste_peso1(oculta, delta, pesos,taxa_aprendizado=0.3, momento=1):
+    # (entrada * delta) = lista
     lista = []
     for i in range(len(oculta[0])):    
         soma = 0
@@ -89,9 +89,25 @@ def ajuste_peso1(oculta, delta, taxa_aprendizado=0.01, momento=1):
             soma += oculta[j][i] * delta[j]
         lista.append(soma)
     # peso (n-1) = (peso(n) * momento) + (entrada * delta * taxa de aprendizagem)
+    novos_pesos = []
+    for i in range(len(pesos)):
+        novo_peso = (pesos[i]*momento) + (lista[i]*taxa_aprendizado)
+        novos_pesos.append(novo_peso)
+    return novos_pesos
+        
+def ajuste_peso0(entradas, delta, pesos, taxa_aprendizado=0.3, momento=1):
+    # entrada * delta
+    lista = []
+    for neuronio in range(len(delta[0])):
+        lista_i = []
+        for i in range(len(entradas[0])):
+            soma = 0
+            for j in range(len(entradas)):
+                soma += entradas[j][i] * delta[j][neuronio]
+            lista_i.append(soma)
+        lista.append(lista_i)
+    
     return lista
-        
-        
         
         
         

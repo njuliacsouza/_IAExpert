@@ -10,7 +10,7 @@ Maria Júlia Cristofoletti de Souza
 
 import pandas as pd
 import numpy as np
-from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1
+from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1, ajuste_peso0
 
 ###### VARIAVEIS ########
 lista_x1 = [0, 0, 1, 1]
@@ -47,8 +47,8 @@ for i in range(len(sinapse0)):
 delta1 = delta_saida(erros, derivadas1)
 delta0 = delta_oculta(derivadas0, pesos1, delta1)
 
-pesos1_final = ajuste_peso1(peso_oculta, delta1)
-pesos0_final = pesos0.copy()
+pesos1_final = ajuste_peso1(peso_oculta, delta1, pesos1)
+pesos0_final = ajuste_peso0(entradas_xy, delta0, pesos0)
 
 
 ###### RESULTADOS ########

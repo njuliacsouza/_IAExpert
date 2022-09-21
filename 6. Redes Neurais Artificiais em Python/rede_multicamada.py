@@ -28,28 +28,28 @@ pesos1 = [-0.017, -0.893, 0.148]
 
 
 ###### MODELAGEM ########
-# primeira iteracao
-peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
-soma_oculta = [soma(peso_oculta[i], pesos1) for i in range(len(peso_oculta))]
-resultado_ativacao = [sigmoid_function(soma_oculta[i]) for i in range(len(soma_oculta))]
-# calculo do erro
-erros = erro(resultado_ativacao, esperados_xor)
-media_erro = np.mean(np.absolute(erros))
-# ajuste dos pesos - 1
-derivadas1 = [derivada_sigmoide(resultado_ativacao[i]) for i in range(len(resultado_ativacao))]
-derivadas0 = []
-for i in range(len(sinapse0)):
-    lista_i = []
-    for j in range(len(sinapse0[0])):
-        lista_i.append(derivada_sigmoide(sigmoid_function(sinapse0[i][j])))
-    derivadas0.append(lista_i)
+epochs = 1
+for _ in range(epochs):
+    peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
+    soma_oculta = [soma(peso_oculta[i], pesos1) for i in range(len(peso_oculta))]
+    resultado_ativacao = [sigmoid_function(soma_oculta[i]) for i in range(len(soma_oculta))]
+    # calculo do erro
+    erros = erro(resultado_ativacao, esperados_xor)
+    media_erro = np.mean(np.absolute(erros))
+    # ajuste dos pesos - 1
+    derivadas1 = [derivada_sigmoide(resultado_ativacao[i]) for i in range(len(resultado_ativacao))]
+    derivadas0 = []
+    for i in range(len(sinapse0)):
+        lista_i = []
+        for j in range(len(sinapse0[0])):
+            lista_i.append(derivada_sigmoide(sigmoid_function(sinapse0[i][j])))
+        derivadas0.append(lista_i)
+        
+    delta1 = delta_saida(erros, derivadas1)
+    delta0 = delta_oculta(derivadas0, pesos1, delta1)
     
-delta1 = delta_saida(erros, derivadas1)
-delta0 = delta_oculta(derivadas0, pesos1, delta1)
-
-pesos1_final = ajuste_peso1(peso_oculta, delta1, pesos1)
-pesos0_final = ajuste_peso0(entradas_xy, delta0, pesos0)
-
+    pesos1_nov = np.array(ajuste_peso1(peso_oculta, delta1, pesos1)).reshape(-1, 1)
+    pesos0_nov = ajuste_peso0(entradas_xy, delta0, pesos0)
 
 ###### RESULTADOS ########
 # tabela verdade
@@ -63,5 +63,5 @@ OP = pd.DataFrame({
     })
 
 print(OP)
-print('Pesos camada oculta:', pesos0_final)
-print('Pesos camada de saída',pesos1_final)
+print('Pesos camada oculta:', pesos0_nov)
+print('Pesos camada de saída',pesos1)

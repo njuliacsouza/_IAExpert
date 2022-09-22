@@ -21,10 +21,13 @@ entradas_xy = list(zip(lista_x1, lista_x2))
 esperados_xor = [0,1,1,0]
 
 # camada de entrada para camada oculta
-pesos0 = [[-0.424, -0.740, -0.961], 
+pesos0_original = [[-0.424, -0.740, -0.961], 
           [0.358, -0.577, -0.469]]
 # camada oculta para camada de saída
-pesos1 = [-0.017, -0.893, 0.148]
+pesos1_original = [-0.017, -0.893, 0.148]
+
+pesos0 = pesos0_original.copy()
+pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
@@ -48,8 +51,16 @@ for _ in range(epochs):
     delta1 = delta_saida(erros, derivadas1)
     delta0 = delta_oculta(derivadas0, pesos1, delta1)
     
-    pesos1_nov = np.array(ajuste_peso1(peso_oculta, delta1, pesos1)).reshape(-1, 1)
-    pesos0_nov = ajuste_peso0(entradas_xy, delta0, pesos0)
+    pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
+    pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
+    lista = []
+    for i in range(len(pesos0[0)):
+        lista_i = []
+        for j in range(len(pesos0)):
+            lista_i.append(pesos0[j][i])
+        lista.append(lista_i)
+    pesos0 = lista.copy()
+    
 
 ###### RESULTADOS ########
 # tabela verdade

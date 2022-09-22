@@ -53,13 +53,7 @@ for _ in range(epochs):
     
     pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
     pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
-    lista = []
-    for i in range(len(pesos0[0])):
-        lista_i = []
-        for j in range(len(pesos0)):
-            lista_i.append(pesos0[j][i])
-        lista.append(lista_i)
-    pesos0 = lista.copy()
+    
     
 
 ###### RESULTADOS ########

@@ -34,7 +34,7 @@ pesos1 = pesos1_original.copy()
 ###### MODELAGEM ########
 epochs = 100000000
 list_erros = []
-for _ in range(epochs):
+for epoch in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
     soma_oculta = [soma(peso_oculta[i], pesos1) for i in range(len(peso_oculta))]
     resultado_ativacao = [sigmoid_function(soma_oculta[i]) for i in range(len(soma_oculta))]
@@ -56,6 +56,9 @@ for _ in range(epochs):
     
     pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
     pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
+    
+    if epoch%100 == 0:
+        print('Epoch:',epoch, 'erro médio:', media_erro)
     
     
 

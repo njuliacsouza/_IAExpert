@@ -11,6 +11,7 @@ Maria Júlia Cristofoletti de Souza
 import pandas as pd
 import numpy as np
 from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1, ajuste_peso0
+import matplotlib.pyplot as plt
 
 ###### VARIAVEIS ########
 lista_x1 = [0, 0, 1, 1]
@@ -31,7 +32,8 @@ pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
-epochs = 50000
+epochs = 40000
+list_erros = []
 for _ in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
     soma_oculta = [soma(peso_oculta[i], pesos1) for i in range(len(peso_oculta))]
@@ -39,6 +41,7 @@ for _ in range(epochs):
     # calculo do erro
     erros = erro(resultado_ativacao, esperados_xor)
     media_erro = np.mean(np.absolute(erros))
+    list_erros.append(media_erro)
     # ajuste dos pesos - 1
     derivadas1 = [derivada_sigmoide(resultado_ativacao[i]) for i in range(len(resultado_ativacao))]
     derivadas0 = []
@@ -71,3 +74,5 @@ print(OP)
 print('Erro médio:', media_erro)
 print('Pesos camada oculta:', pesos0)
 print('Pesos camada de saída',pesos1)
+
+plt.scatter(y=list_erros, x=[i for i in range(epochs)])

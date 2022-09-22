@@ -24,14 +24,14 @@ esperados_xor = [0,1,1,0]
 # camada de entrada para camada oculta
 pesos0_original = 2*np.random.random((2,3)) - 1
 # camada oculta para camada de saída
-pesos1_original = 2*np.random.random((3,1)) - 1
+pesos1_original = 2*np.random.random((3,)) - 1
 
 pesos0 = pesos0_original.copy()
 pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
-epochs = 2
+epochs = 1000000
 list_erros = []
 for epoch in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
@@ -52,11 +52,10 @@ for epoch in range(epochs):
         
     delta1 = delta_saida(erros, derivadas1)
     delta0 = delta_oculta(derivadas0, pesos1, delta1)
-    
     pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
     pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
     
-    if epoch%(int(epochs//1))==0:
+    if epoch%(int(epochs//100))==0:
         print('Epoch:',epoch+1, 'erro médio:', media_erro)
     
     

@@ -32,7 +32,7 @@ pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
-epochs = 40000
+epochs = 100000000
 list_erros = []
 for _ in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)

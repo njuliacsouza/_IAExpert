@@ -116,13 +116,7 @@ def ajuste_peso0(entradas, delta, pesos, taxa_aprendizado=0.3, momento=1): # cam
             lista_i.append(novo_peso)
         novos_pesos.append(lista_i)
     
-    lista = []
-    for i in range(len(novos_pesos[0])):
-        lista_i = []
-        for j in range(len(novos_pesos)):
-            lista_i.append(novos_pesos[j][i])
-        lista.append(lista_i)
-    novos_pesos = lista.copy()
+    novos_pesos = np.array(novos_pesos).T
     
     return novos_pesos
         

@@ -31,7 +31,7 @@ pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
-epochs = 1
+epochs = 50000
 for _ in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
     soma_oculta = [soma(peso_oculta[i], pesos1) for i in range(len(peso_oculta))]
@@ -54,7 +54,7 @@ for _ in range(epochs):
     pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
     pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
     lista = []
-    for i in range(len(pesos0[0)):
+    for i in range(len(pesos0[0])):
         lista_i = []
         for j in range(len(pesos0)):
             lista_i.append(pesos0[j][i])
@@ -74,5 +74,6 @@ OP = pd.DataFrame({
     })
 
 print(OP)
-print('Pesos camada oculta:', pesos0_nov)
+print('Erro médio:', media_erro)
+print('Pesos camada oculta:', pesos0)
 print('Pesos camada de saída',pesos1)

@@ -76,4 +76,4 @@ print('Erro médio:', media_erro)
 print('Pesos camada oculta:', pesos0)
 print('Pesos camada de saída',pesos1)
 
-plt.scatter(y=list_erros, x=[i for i in range(epochs)], s=0.1)
+plt.scatter(y=list_erros, x=[i for i in range(epochs)], s=0.1) # melhor rodar com epochs=200000

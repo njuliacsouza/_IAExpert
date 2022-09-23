@@ -55,7 +55,7 @@ for epoch in range(epochs):
     pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1, taxa_aprendizado=0.3) 
     pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0, taxa_aprendizado=0.3)
     
-    if ((epoch+1)%10 ==0) or (epoch==0):
+    if ((epoch+1)%100 ==0) or (epoch==0):
         print('Epoch:',epoch+1, 'erro médio:', media_erro)
     
     

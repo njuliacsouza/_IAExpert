@@ -6,8 +6,6 @@ September, 2022
 Maria Júlia Cristofoletti de Souza
 """
 
-# feedforward
-
 import pandas as pd
 import numpy as np
 from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1, ajuste_peso0

@@ -20,15 +20,18 @@ entradas_xy = base.data
 # operador XOR esperado
 esperados_xor = base.target
 
-pesos0_original = []
-pesos1_original = []
+neuronios = 5
+# camada de entrada para camada oculta
+pesos0_original = 2*np.random.random((30,neuronios)) - 1
+# camada oculta para camada de saída
+pesos1_original = 2*np.random.random((neuronios,)) - 1
 
 pesos0 = pesos0_original.copy()
 pesos1 = pesos1_original.copy()
 
 
 ###### MODELAGEM ########
-epochs = 200000
+epochs = 10000
 list_erros = []
 for epoch in range(epochs):
     peso_oculta, sinapse0 = camada_ocultaI(entradas_xy, pesos0, pesos1)
@@ -49,30 +52,16 @@ for epoch in range(epochs):
         
     delta1 = delta_saida(erros, derivadas1)
     delta0 = delta_oculta(derivadas0, pesos1, delta1)
-    pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1)
-    pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0)
+    pesos1 = ajuste_peso1(peso_oculta, delta1, pesos1, taxa_aprendizado=0.3) 
+    pesos0 = ajuste_peso0(entradas_xy, delta0, pesos0, taxa_aprendizado=0.3)
     
-    if epoch%(int(epochs//100))==0:
+    if ((epoch+1)%10 ==0) or (epoch==0):
         print('Epoch:',epoch+1, 'erro médio:', media_erro)
     
     
 
-###### RESULTADOS ########
-# tabela verdade
-OP = pd.DataFrame({
-    'x1':lista_x1, 
-    'x2':lista_x2, 
-    'classe_XOR':esperados_xor,
-    'soma': soma_oculta,
-    'ativacao': resultado_ativacao,
-    'erro': erros
-    })
 
-print(OP)
-print('Erro médio:', media_erro)
-print('Pesos camada oculta:', pesos0)
-print('Pesos camada de saída',pesos1)
-
-plt.scatter(y=list_erros, x=[i for i in range(epochs)], s=0.1) 
+plt.scatter(y=list_erros, x=[i for i in range(epochs)], s=2) 
+plt.title('Erro x  epoch')
 
 

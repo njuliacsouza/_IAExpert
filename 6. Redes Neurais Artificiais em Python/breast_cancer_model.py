@@ -8,16 +8,17 @@ Maria Júlia Cristofoletti de Souza
 
 import pandas as pd
 import numpy as np
-from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1, ajuste_peso0
 import matplotlib.pyplot as plt
+from sklearn import datasets
+
+#from NeuralNetwork import camada_ocultaI, sigmoid_function, soma, erro, derivada_sigmoide, delta_saida, delta_oculta, ajuste_peso1, ajuste_peso0
 
 ###### VARIAVEIS ########
-lista_x1 = [0, 0, 1, 1]
-lista_x2 = [0, 1, 0, 1]
-entradas_xy = list(zip(lista_x1, lista_x2))
+base = datasets.load_breast_cancer()
+entradas_xy = base.data
 
 # operador XOR esperado
-esperados_xor = [0,1,1,0]
+esperados_xor = base.target
 
 # camada de entrada para camada oculta
 pesos0_original = 2*np.random.random((2,3)) - 1

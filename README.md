@@ -89,6 +89,10 @@
     <li> ANEXO I: Rede Neural Artificial </li>
     <li> ANEXO II: Rede Neural Artificial Recorrente </li>
   </ul>
+  <li> Mineração de Emoção em Textos com Python e NLTK *(em progresso)* </li>
+  <ul>
+    <li> 1 - Mineração de textos e classificação </li>
+  </ul>
 </ol>
 
 <!--  

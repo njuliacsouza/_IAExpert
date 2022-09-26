@@ -1,9 +1,9 @@
 <h1 align='center'> IAExpert Academy - cursos </h1>
 
 <ol> 
-  <li> Lógica de programação: Guia completo</li>
-  <li> Programação em Python: O guia para iniciantes </li>
-  <li> Machine Learning e Data Science de A à Z </li>
+  <li> Lógica de programação: Guia completo :white_check_mark: </li>
+  <li> Programação em Python: O guia para iniciantes :white_check_mark:</li>
+  <li> Machine Learning e Data Science de A à Z :white_check_mark:</li>
     <ul>
       <li> 1 - Classificação </li>
       <ul>
@@ -46,7 +46,7 @@
         <li> Séries Temporais </li>
       </ul>
   </ul>
-  <li> Estatística para Ciência de Dados e Machine Learning </li>
+  <li> Estatística para Ciência de Dados e Machine Learning :white_check_mark:</li>
   <ul> 
     <li> 1 - População e amostra </li>
     <li> 2 - Dados absolutos e relativos </li>
@@ -58,7 +58,7 @@
     <li> 8 - Correlação e regressão </li>
     <li> 9 - Visualização </li>
   </ul>
-  <li> Python para Finanças: Análise de Dados e Machine Learning</li>
+  <li> Python para Finanças: Análise de Dados e Machine Learning :white_check_mark:</li>
   <ul> 
     <li> 1 - Finanças </li>
     <ul> 
@@ -77,16 +77,17 @@
       <li> Análise de sentimentos em textos financeiros </li>
     </ul>
   </ul>
-  <li> Redes Neurais Artificiais em Python </li>
+  <li> Redes Neurais Artificiais em Python :white_check_mark:</li>
   <ul>
       <li> 1 - Perceptron de uma camada</li>
       <li> 2 - Redes Neurais Multicamada</li>
   </ul>
-  <li> Processamento de Linguagem Natural com Deep Learning </li>
+  <li> Processamento de Linguagem Natural com Deep Learning :white_check_mark: </li>
   <ul> 
     <li> 1 - Redes Neurais convolucionais para PLN </li>
     <li> 2 - Arquitetura Transformer </li>
     <li> ANEXO I: Rede Neural Artificial </li>
+    <li> ANEXO II: Rede Neural Artificial Recorrente </li>
   </ul>
 </ol>
 
